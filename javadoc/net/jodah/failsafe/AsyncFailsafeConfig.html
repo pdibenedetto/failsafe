@@ -97,7 +97,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li><a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class in net.jodah.failsafe">net.jodah.failsafe.FailsafeConfig</a>&lt;R,F&gt;</li>
@@ -128,7 +128,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <div class="block">Async Failsafe configuration.
  <p>
  Async execution event listeners are called asynchronously on the <a href="../../../net/jodah/failsafe/util/concurrent/Scheduler.html" title="interface in net.jodah.failsafe.util.concurrent"><code>Scheduler</code></a> or
- <code>ScheduledExecutorService</code> associated with the Failsafe call.</div>
+ <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ScheduledExecutorService</code></a> associated with the Failsafe call.</div>
 </li>
 </ul>
 </div>
@@ -149,112 +149,112 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onAbortAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onAbortAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onAbortAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onAbortAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is aborted according to the retry policy.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onAbortAsync-net.jodah.failsafe.function.CheckedConsumer-">onAbortAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onAbortAsync-net.jodah.failsafe.function.CheckedConsumer-">onAbortAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is aborted according to the retry policy.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onAbortAsync-net.jodah.failsafe.event.ContextualResultListener-">onAbortAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onAbortAsync-net.jodah.failsafe.event.ContextualResultListener-">onAbortAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is aborted according to the retry policy.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onCompleteAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onCompleteAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onCompleteAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onCompleteAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is completed.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onCompleteAsync-net.jodah.failsafe.event.ContextualResultListener-">onCompleteAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onCompleteAsync-net.jodah.failsafe.event.ContextualResultListener-">onCompleteAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is completed.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailedAttemptAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onFailedAttemptAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailedAttemptAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onFailedAttemptAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failed execution attempt.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailedAttemptAsync-net.jodah.failsafe.function.CheckedConsumer-">onFailedAttemptAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailedAttemptAsync-net.jodah.failsafe.function.CheckedConsumer-">onFailedAttemptAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failed execution attempt.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailedAttemptAsync-net.jodah.failsafe.event.ContextualResultListener-">onFailedAttemptAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailedAttemptAsync-net.jodah.failsafe.event.ContextualResultListener-">onFailedAttemptAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failed execution attempt.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailureAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onFailureAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailureAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onFailureAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failure occurs that cannot be retried.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailureAsync-net.jodah.failsafe.function.CheckedConsumer-">onFailureAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailureAsync-net.jodah.failsafe.function.CheckedConsumer-">onFailureAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failure occurs that cannot be retried.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailureAsync-net.jodah.failsafe.event.ContextualResultListener-">onFailureAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onFailureAsync-net.jodah.failsafe.event.ContextualResultListener-">onFailureAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failure occurs that cannot be retried.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetriesExceededAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onRetriesExceededAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetriesExceededAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onRetriesExceededAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution fails and the max retry attempts or duration are exceeded.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetriesExceededAsync-net.jodah.failsafe.function.CheckedConsumer-">onRetriesExceededAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetriesExceededAsync-net.jodah.failsafe.function.CheckedConsumer-">onRetriesExceededAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution fails and the max retry attempts or duration are exceeded.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetryAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onRetryAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetryAsync-net.jodah.failsafe.function.CheckedBiConsumer-">onRetryAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler before a
  retry is attempted.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetryAsync-net.jodah.failsafe.function.CheckedConsumer-">onRetryAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetryAsync-net.jodah.failsafe.function.CheckedConsumer-">onRetryAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler before a
  retry is attempted.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetryAsync-net.jodah.failsafe.event.ContextualResultListener-">onRetryAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html#onRetryAsync-net.jodah.failsafe.event.ContextualResultListener-">onRetryAsync</a></span>(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</code>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler before a
  retry is attempted.</div>
 </td>
@@ -285,8 +285,8 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -308,7 +308,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onAbortAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onAbortAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onAbortAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is aborted according to the retry policy.</div>
 </li>
@@ -319,7 +319,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onAbortAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onAbortAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onAbortAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is aborted according to the retry policy.</div>
 </li>
@@ -330,7 +330,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onAbortAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onAbortAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onAbortAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is aborted according to the retry policy.</div>
 </li>
@@ -341,7 +341,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onCompleteAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onCompleteAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onCompleteAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is completed.</div>
 </li>
@@ -352,7 +352,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onCompleteAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onCompleteAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onCompleteAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution is completed.</div>
 </li>
@@ -363,7 +363,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onFailedAttemptAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailedAttemptAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailedAttemptAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failed execution attempt.</div>
 </li>
@@ -374,7 +374,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onFailedAttemptAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailedAttemptAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailedAttemptAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failed execution attempt.</div>
 </li>
@@ -385,7 +385,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onFailedAttemptAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailedAttemptAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailedAttemptAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failed execution attempt.</div>
 </li>
@@ -396,7 +396,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onFailureAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailureAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailureAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failure occurs that cannot be retried.</div>
 </li>
@@ -407,7 +407,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onFailureAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailureAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailureAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failure occurs that cannot be retried.</div>
 </li>
@@ -418,7 +418,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onFailureAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailureAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onFailureAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler after a
  failure occurs that cannot be retried.</div>
 </li>
@@ -429,7 +429,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onRetriesExceededAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetriesExceededAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetriesExceededAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution fails and the max retry attempts or duration are exceeded.</div>
 </li>
@@ -440,7 +440,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onRetriesExceededAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetriesExceededAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetriesExceededAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler when an
  execution fails and the max retry attempts or duration are exceeded.</div>
 </li>
@@ -451,7 +451,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onRetryAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetryAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetryAsync(<a href="../../../net/jodah/failsafe/event/ContextualResultListener.html" title="interface in net.jodah.failsafe.event">ContextualResultListener</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler before a
  retry is attempted.</div>
 </li>
@@ -462,7 +462,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onRetryAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetryAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetryAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler before a
  retry is attempted.</div>
 </li>
@@ -473,7 +473,7 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <ul class="blockList">
 <li class="blockList">
 <h4>onRetryAsync</h4>
-<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetryAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends java.lang.Throwable&gt;&nbsp;listener)</pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">F</a>&nbsp;onRetryAsync(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="type parameter in AsyncFailsafeConfig">R</a>,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;listener)</pre>
 <div class="block">Registers the <code>listener</code> to be called asynchronously on Failsafe's configured executor or Scheduler before a
  retry is attempted.</div>
 </li>
@@ -569,6 +569,6 @@ extends <a href="../../../net/jodah/failsafe/FailsafeConfig.html" title="class i
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2018. All Rights Reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2018. All rights reserved.</small></p>
 </body>
 </html>

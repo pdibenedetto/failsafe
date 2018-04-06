@@ -155,6 +155,11 @@
 </a>
 <h2 class="title">C</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.DelayFunction.html#calculateDelay-R-F-net.jodah.failsafe.ExecutionContext-">calculateDelay(R, F, ExecutionContext)</a></span> - Method in interface net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a></dt>
+<dd>
+<div class="block">Returns the amount of delay before the next retry based on the result or failure of the last attempt and the
+ execution context (executions so far).</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/function/AsyncCallable.html#call-net.jodah.failsafe.AsyncExecution-">call(AsyncExecution)</a></span> - Method in interface net.jodah.failsafe.function.<a href="net/jodah/failsafe/function/AsyncCallable.html" title="interface in net.jodah.failsafe.function">AsyncCallable</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/function/ContextualCallable.html#call-net.jodah.failsafe.ExecutionContext-">call(ExecutionContext)</a></span> - Method in interface net.jodah.failsafe.function.<a href="net/jodah/failsafe/function/ContextualCallable.html" title="interface in net.jodah.failsafe.function">ContextualCallable</a></dt>
@@ -162,6 +167,10 @@
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#canAbortFor-java.lang.Object-java.lang.Throwable-">canAbortFor(Object, Throwable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
 <div class="block">Returns whether an execution result can be aborted given the configured abort conditions.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#canApplyDelayFn-java.lang.Object-java.lang.Throwable-">canApplyDelayFn(Object, Throwable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Returns whether any configured delay function can be applied for an execution result.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeFuture.html#cancel-boolean-">cancel(boolean)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeFuture.html" title="class in net.jodah.failsafe">FailsafeFuture</a></dt>
 <dd>
@@ -365,17 +374,17 @@
 <dd>
 <div class="block">Specifies that a failure should be recorded if the execution result matches the <code>result</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncFailsafe.html#future-java.util.concurrent.Callable-">future(Callable&lt;CompletableFuture&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncFailsafe.html" title="class in net.jodah.failsafe">AsyncFailsafe</a></dt>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncFailsafe.html#future-java.util.concurrent.Callable-">future(Callable&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncFailsafe.html" title="class in net.jodah.failsafe">AsyncFailsafe</a></dt>
 <dd>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncFailsafe.html#future-net.jodah.failsafe.function.ContextualCallable-">future(ContextualCallable&lt;CompletableFuture&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncFailsafe.html" title="class in net.jodah.failsafe">AsyncFailsafe</a></dt>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncFailsafe.html#future-net.jodah.failsafe.function.ContextualCallable-">future(ContextualCallable&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncFailsafe.html" title="class in net.jodah.failsafe">AsyncFailsafe</a></dt>
 <dd>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncFailsafe.html#futureAsync-net.jodah.failsafe.function.AsyncCallable-">futureAsync(AsyncCallable&lt;CompletableFuture&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncFailsafe.html" title="class in net.jodah.failsafe">AsyncFailsafe</a></dt>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncFailsafe.html#futureAsync-net.jodah.failsafe.function.AsyncCallable-">futureAsync(AsyncCallable&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncFailsafe.html" title="class in net.jodah.failsafe">AsyncFailsafe</a></dt>
 <dd>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
@@ -437,6 +446,18 @@
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#getDelayFactor--">getDelayFactor()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
 <div class="block">Returns the delay factor for backoff retries.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#getDelayFn--">getDelayFn()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Returns the function that determines the next delay given a failed attempt with the given <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang"><code>Throwable</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#getDelayMax--">getDelayMax()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Returns the max delay between retries.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#getDelayMin--">getDelayMin()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Returns the min delay between retries.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/ExecutionContext.html#getElapsedTime--">getElapsedTime()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a></dt>
 <dd>
@@ -1003,9 +1024,14 @@
 <dd>
 <div class="block">Copy constructor.</div>
 </dd>
+<dt><a href="net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe"><span class="typeNameLink">RetryPolicy.DelayFunction</span></a>&lt;<a href="net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">R</a>,<a href="net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">F</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt; - Interface in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
+<dd>
+<div class="block">A functional interface for dynamically computing delays between retries in conjunction with
+ <a href="net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-"><code>RetryPolicy.withDelay(DelayFunction)</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#retryWhen-java.lang.Object-">retryWhen(Object)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
-<div class="block">Specifies that a retry should occur if the execution result matches the <code>result</code> and the retry policy is not
+<div class="block">Specifies that a retry should occur if the execution result equals the <code>result</code> and the retry policy is not
  exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncFailsafe.html#run-net.jodah.failsafe.function.CheckedRunnable-">run(CheckedRunnable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncFailsafe.html" title="class in net.jodah.failsafe">AsyncFailsafe</a></dt>
@@ -1168,7 +1194,23 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#withDelay-long-java.util.concurrent.TimeUnit-">withDelay(long, TimeUnit)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
-<div class="block">Sets the <code>delay</code> between retries.</div>
+<div class="block">Sets the <code>delay</code> to occur between retries.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#withDelay-long-long-java.util.concurrent.TimeUnit-">withDelay(long, long, TimeUnit)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Sets a random delay between the <code>delayMin</code> and <code>delayMax</code> (inclusive) to occur between retries.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-">withDelay(RetryPolicy.DelayFunction&lt;?, ? extends Throwable&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#withDelayOn-net.jodah.failsafe.RetryPolicy.DelayFunction-java.lang.Class-">withDelayOn(RetryPolicy.DelayFunction&lt;Object, F&gt;, Class&lt;F&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#withDelayWhen-net.jodah.failsafe.RetryPolicy.DelayFunction-R-">withDelayWhen(RetryPolicy.DelayFunction&lt;R, ? extends Throwable&gt;, R)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/CircuitBreaker.html#withFailureThreshold-int-">withFailureThreshold(int)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/CircuitBreaker.html" title="class in net.jodah.failsafe">CircuitBreaker</a></dt>
 <dd>

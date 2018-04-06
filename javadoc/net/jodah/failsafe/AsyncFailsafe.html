@@ -148,21 +148,21 @@ extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="cl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafe.html#future-java.util.concurrent.Callable-">future</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&gt;&nbsp;callable)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafe.html#future-java.util.concurrent.Callable-">future</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent">CompletionStage</a>&lt;T&gt;&gt;&nbsp;callable)</code>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafe.html#future-net.jodah.failsafe.function.ContextualCallable-">future</a></span>(<a href="../../../net/jodah/failsafe/function/ContextualCallable.html" title="interface in net.jodah.failsafe.function">ContextualCallable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&gt;&nbsp;callable)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafe.html#future-net.jodah.failsafe.function.ContextualCallable-">future</a></span>(<a href="../../../net/jodah/failsafe/function/ContextualCallable.html" title="interface in net.jodah.failsafe.function">ContextualCallable</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent">CompletionStage</a>&lt;T&gt;&gt;&nbsp;callable)</code>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafe.html#futureAsync-net.jodah.failsafe.function.AsyncCallable-">futureAsync</a></span>(<a href="../../../net/jodah/failsafe/function/AsyncCallable.html" title="interface in net.jodah.failsafe.function">AsyncCallable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&gt;&nbsp;callable)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncFailsafe.html#futureAsync-net.jodah.failsafe.function.AsyncCallable-">futureAsync</a></span>(<a href="../../../net/jodah/failsafe/function/AsyncCallable.html" title="interface in net.jodah.failsafe.function">AsyncCallable</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent">CompletionStage</a>&lt;T&gt;&gt;&nbsp;callable)</code>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
 </td>
@@ -251,7 +251,7 @@ extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>future</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&nbsp;future(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&gt;&nbsp;callable)</pre>
+<pre>public&nbsp;&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&nbsp;future(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent">CompletionStage</a>&lt;T&gt;&gt;&nbsp;callable)</pre>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.
  <p>
@@ -271,7 +271,7 @@ extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>future</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&nbsp;future(<a href="../../../net/jodah/failsafe/function/ContextualCallable.html" title="interface in net.jodah.failsafe.function">ContextualCallable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&gt;&nbsp;callable)</pre>
+<pre>public&nbsp;&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&nbsp;future(<a href="../../../net/jodah/failsafe/function/ContextualCallable.html" title="interface in net.jodah.failsafe.function">ContextualCallable</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent">CompletionStage</a>&lt;T&gt;&gt;&nbsp;callable)</pre>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.
  <p>
@@ -291,7 +291,7 @@ extends <a href="../../../net/jodah/failsafe/AsyncFailsafeConfig.html" title="cl
 <ul class="blockList">
 <li class="blockList">
 <h4>futureAsync</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&nbsp;futureAsync(<a href="../../../net/jodah/failsafe/function/AsyncCallable.html" title="interface in net.jodah.failsafe.function">AsyncCallable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&gt;&nbsp;callable)</pre>
+<pre>public&nbsp;&lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;&nbsp;futureAsync(<a href="../../../net/jodah/failsafe/function/AsyncCallable.html" title="interface in net.jodah.failsafe.function">AsyncCallable</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent">CompletionStage</a>&lt;T&gt;&gt;&nbsp;callable)</pre>
 <div class="block">Executes the <code>callable</code> asynchronously until the resulting future is successfully completed or the configured
  <a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded. This method is intended for integration with asynchronous code. Retries must be
  manually scheduled via one of the <code>AsyncExecution.retry</code> methods.

@@ -138,6 +138,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../net/jodah/failsafe/util/Duration.html" title="class in net.jodah.failsafe.util">Duration</a></code></td>
+<td class="colLast"><span class="typeNameLabel">RetryPolicy.DelayFunction.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html#calculateDelay-R-F-net.jodah.failsafe.ExecutionContext-">calculateDelay</a></span>(<a href="../../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">R</a>&nbsp;result,
+              <a href="../../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">F</a>&nbsp;failure,
+              <a href="../../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</code>
+<div class="block">Returns the amount of delay before the next retry based on the result or failure of the last attempt and the
+ execution context (executions so far).</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Listeners.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/Listeners.html#onAbort-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">onAbort</a></span>(<a href="../../../../net/jodah/failsafe/Listeners.html" title="type parameter in Listeners">R</a>&nbsp;result,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
@@ -145,7 +154,7 @@
 <div class="block">Called when an execution is aborted.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Listeners.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/Listeners.html#onComplete-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">onComplete</a></span>(<a href="../../../../net/jodah/failsafe/Listeners.html" title="type parameter in Listeners">R</a>&nbsp;result,
           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
@@ -153,7 +162,7 @@
 <div class="block">Called when an execution is completed.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Listeners.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/Listeners.html#onFailedAttempt-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">onFailedAttempt</a></span>(<a href="../../../../net/jodah/failsafe/Listeners.html" title="type parameter in Listeners">R</a>&nbsp;result,
                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
@@ -161,7 +170,7 @@
 <div class="block">Called when an execution attempt fails.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Listeners.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/Listeners.html#onFailure-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">onFailure</a></span>(<a href="../../../../net/jodah/failsafe/Listeners.html" title="type parameter in Listeners">R</a>&nbsp;result,
          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
@@ -169,7 +178,7 @@
 <div class="block">Called when an execution fails and cannot be retried.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Listeners.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/Listeners.html#onRetry-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">onRetry</a></span>(<a href="../../../../net/jodah/failsafe/Listeners.html" title="type parameter in Listeners">R</a>&nbsp;result,
        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
@@ -177,7 +186,7 @@
 <div class="block">Called before an execution is retried.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Listeners.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/Listeners.html#onSuccess-R-net.jodah.failsafe.ExecutionContext-">onSuccess</a></span>(<a href="../../../../net/jodah/failsafe/Listeners.html" title="type parameter in Listeners">R</a>&nbsp;result,
          <a href="../../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</code>

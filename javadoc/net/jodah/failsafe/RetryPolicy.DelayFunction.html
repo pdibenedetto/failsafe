@@ -116,8 +116,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang">@FunctionalInterface</a>
 public static interface <span class="typeNameLabel">RetryPolicy.DelayFunction&lt;R,F extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;</span></pre>
-<div class="block">A functional interface for dynamically computing delays between retries in conjunction with
- <a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-"><code>RetryPolicy.withDelay(DelayFunction)</code></a>.</div>
+<div class="block">A functional interface for computing delays between retries in conjunction with <a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-"><code>RetryPolicy.withDelay(DelayFunction)</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -138,9 +137,9 @@ public static interface <span class="typeNameLabel">RetryPolicy.DelayFunction&lt
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/util/Duration.html" title="class in net.jodah.failsafe.util">Duration</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html#calculateDelay-R-F-net.jodah.failsafe.ExecutionContext-">calculateDelay</a></span>(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">R</a>&nbsp;result,
-              <a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">F</a>&nbsp;failure,
-              <a href="../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html#computeDelay-R-F-net.jodah.failsafe.ExecutionContext-">computeDelay</a></span>(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">R</a>&nbsp;result,
+            <a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">F</a>&nbsp;failure,
+            <a href="../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</code>
 <div class="block">Returns the amount of delay before the next retry based on the result or failure of the last attempt and the
  execution context (executions so far).</div>
 </td>
@@ -160,17 +159,17 @@ public static interface <span class="typeNameLabel">RetryPolicy.DelayFunction&lt
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="calculateDelay-java.lang.Object-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">
+<a name="computeDelay-java.lang.Object-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">
 <!--   -->
-</a><a name="calculateDelay-R-F-net.jodah.failsafe.ExecutionContext-">
+</a><a name="computeDelay-R-F-net.jodah.failsafe.ExecutionContext-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>calculateDelay</h4>
-<pre><a href="../../../net/jodah/failsafe/util/Duration.html" title="class in net.jodah.failsafe.util">Duration</a>&nbsp;calculateDelay(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">R</a>&nbsp;result,
-                        <a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">F</a>&nbsp;failure,
-                        <a href="../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</pre>
+<h4>computeDelay</h4>
+<pre><a href="../../../net/jodah/failsafe/util/Duration.html" title="class in net.jodah.failsafe.util">Duration</a>&nbsp;computeDelay(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">R</a>&nbsp;result,
+                      <a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">F</a>&nbsp;failure,
+                      <a href="../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</pre>
 <div class="block">Returns the amount of delay before the next retry based on the result or failure of the last attempt and the
  execution context (executions so far). This method must complete quickly and should not have side-effects.
  Unchecked exceptions thrown by this method will <strong>not</strong> be treated as part of the fail-safe

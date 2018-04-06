@@ -139,8 +139,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a>&lt;<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">R</a>,<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">F</a> extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;</span></code>
-<div class="block">A functional interface for dynamically computing delays between retries in conjunction with
- <a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-"><code>withDelay(DelayFunction)</code></a>.</div>
+<div class="block">A functional interface for computing delays between retries in conjunction with <a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-"><code>withDelay(DelayFunction)</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -401,21 +400,21 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-">withDelay</a></span>(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a>&lt;?,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;delayFunction)</code>
-<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying.</div>
+<div class="block">Sets the <code>delayFunction</code> that computes the next delay before retrying.</div>
 </td>
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>&lt;F extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;<br><a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelayOn-net.jodah.failsafe.RetryPolicy.DelayFunction-java.lang.Class-">withDelayOn</a></span>(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,F&gt;&nbsp;delayFunction,
            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;F&gt;&nbsp;failure)</code>
-<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying.</div>
+<div class="block">Sets the <code>delayFunction</code> that computes the next delay before retrying.</div>
 </td>
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelayWhen-net.jodah.failsafe.RetryPolicy.DelayFunction-R-">withDelayWhen</a></span>(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a>&lt;R,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;delayFunction,
              R&nbsp;result)</code>
-<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying.</div>
+<div class="block">Sets the <code>delayFunction</code> that computes the next delay before retrying.</div>
 </td>
 </tr>
 <tr id="i36" class="altColor">
@@ -1003,7 +1002,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>withDelay</h4>
 <pre>public&nbsp;<a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a>&nbsp;withDelay(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a>&lt;?,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;delayFunction)</pre>
-<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying.</div>
+<div class="block">Sets the <code>delayFunction</code> that computes the next delay before retrying.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>delayFunction</code> - the function to use to compute the delay before a next attempt</dd>
@@ -1022,7 +1021,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>withDelayOn</h4>
 <pre>public&nbsp;&lt;F extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;<a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a>&nbsp;withDelayOn(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,F&gt;&nbsp;delayFunction,
                                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;F&gt;&nbsp;failure)</pre>
-<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying. Delays will only occur for failures
+<div class="block">Sets the <code>delayFunction</code> that computes the next delay before retrying. Delays will only occur for failures
  that are assignable from the <code>failure</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -1047,7 +1046,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>withDelayWhen</h4>
 <pre>public&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a>&nbsp;withDelayWhen(<a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a>&lt;R,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;delayFunction,
                                      R&nbsp;result)</pre>
-<div class="block">Sets the <code>delayFunction</code> that determines the next delay before retrying. Delays will only occur for results
+<div class="block">Sets the <code>delayFunction</code> that computes the next delay before retrying. Delays will only occur for results
  that equal the <code>result</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>

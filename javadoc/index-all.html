@@ -350,21 +350,6 @@
 <dd>
 <div class="block">A Policy that handles failures using a fallback.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#futureAsync-net.jodah.failsafe.function.CheckedSupplier-">futureAsync(CheckedSupplier&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
-<dd>
-<div class="block">Executes the <code>supplier</code> asynchronously until the resulting future is successfully completed or the configured
- <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#futureAsync-net.jodah.failsafe.function.ContextualSupplier-">futureAsync(ContextualSupplier&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
-<dd>
-<div class="block">Executes the <code>supplier</code> asynchronously until the resulting future is successfully completed or the configured
- <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#futureAsyncExecution-net.jodah.failsafe.function.AsyncSupplier-">futureAsyncExecution(AsyncSupplier&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
-<dd>
-<div class="block">Executes the <code>supplier</code> asynchronously until the resulting future is successfully completed or the configured
- <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
-</dd>
 </dl>
 <a name="I:G">
 <!--   -->
@@ -373,13 +358,11 @@
 <dl>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#get-net.jodah.failsafe.function.CheckedSupplier-">get(CheckedSupplier&lt;T&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>supplier</code> until a successful result is returned or the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is
- exceeded.</div>
+<div class="block">Executes the <code>supplier</code> until a successful result is returned or the configured policies are exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#get-net.jodah.failsafe.function.ContextualSupplier-">get(ContextualSupplier&lt;T&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>supplier</code> until a successful result is returned or the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is
- exceeded.</div>
+<div class="block">Executes the <code>supplier</code> until a successful result is returned or the configured policies are exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/function/AsyncSupplier.html#get-net.jodah.failsafe.AsyncExecution-">get(AsyncExecution)</a></span> - Method in interface net.jodah.failsafe.function.<a href="net/jodah/failsafe/function/AsyncSupplier.html" title="interface in net.jodah.failsafe.function">AsyncSupplier</a></dt>
 <dd>&nbsp;</dd>
@@ -393,15 +376,18 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#getAsync-net.jodah.failsafe.function.CheckedSupplier-">getAsync(CheckedSupplier&lt;T&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>supplier</code> asynchronously until a successful result is returned or the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
+<div class="block">Executes the <code>supplier</code> asynchronously until a successful result is returned or the configured policies are
+ exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#getAsync-net.jodah.failsafe.function.ContextualSupplier-">getAsync(ContextualSupplier&lt;T&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>supplier</code> asynchronously until a successful result is returned or the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
+<div class="block">Executes the <code>supplier</code> asynchronously until a successful result is returned or the configured policies are
+ exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#getAsyncExecution-net.jodah.failsafe.function.AsyncSupplier-">getAsyncExecution(AsyncSupplier&lt;T&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>supplier</code> asynchronously until a successful result is returned or the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
+<div class="block">Executes the <code>supplier</code> asynchronously until a successful result is returned or the configured policies are
+ exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/event/ExecutionEvent.html#getAttemptCount--">getAttemptCount()</a></span> - Method in class net.jodah.failsafe.event.<a href="net/jodah/failsafe/event/ExecutionEvent.html" title="class in net.jodah.failsafe.event">ExecutionEvent</a></dt>
 <dd>
@@ -510,6 +496,21 @@
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/ExecutionResult.html#getResult--">getResult()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#getStageAsync-net.jodah.failsafe.function.CheckedSupplier-">getStageAsync(CheckedSupplier&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
+<dd>
+<div class="block">Executes the <code>supplier</code> asynchronously until the resulting future is successfully completed or the configured
+ policies are exceeded.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#getStageAsync-net.jodah.failsafe.function.ContextualSupplier-">getStageAsync(ContextualSupplier&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
+<dd>
+<div class="block">Executes the <code>supplier</code> asynchronously until the resulting future is successfully completed or the configured
+ policies are exceeded.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#getStageAsyncExecution-net.jodah.failsafe.function.AsyncSupplier-">getStageAsyncExecution(AsyncSupplier&lt;? extends CompletionStage&lt;T&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
+<dd>
+<div class="block">Executes the <code>supplier</code> asynchronously until the resulting future is successfully completed or the configured
+ policies are exceeded.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/event/ExecutionEvent.html#getStartTime--">getStartTime()</a></span> - Method in class net.jodah.failsafe.event.<a href="net/jodah/failsafe/event/ExecutionEvent.html" title="class in net.jodah.failsafe.event">ExecutionEvent</a></dt>
 <dd>
 <div class="block">Returns the time that the initial execution started.</div>
@@ -713,7 +714,8 @@
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#onComplete-net.jodah.failsafe.function.CheckedConsumer-">onComplete(CheckedConsumer&lt;? extends ExecutionCompletedEvent&lt;R&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Registers the <code>listener</code> to be called when an execution is complete for all of the configured <a href="net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe"><code>policies</code></a>.</div>
+<div class="block">Registers the <code>listener</code> to be called when an execution is complete for all of the configured policies are
+ exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#onFailedAttempt-net.jodah.failsafe.function.CheckedConsumer-">onFailedAttempt(CheckedConsumer&lt;? extends ExecutionAttemptedEvent&lt;R&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
@@ -856,11 +858,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#run-net.jodah.failsafe.function.CheckedRunnable-">run(CheckedRunnable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>runnable</code> until successful or until the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
+<div class="block">Executes the <code>runnable</code> until successful or until the configured policies are exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#run-net.jodah.failsafe.function.ContextualRunnable-">run(ContextualRunnable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>runnable</code> until successful or until the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
+<div class="block">Executes the <code>runnable</code> until successful or until the configured policies are exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/function/AsyncRunnable.html#run-net.jodah.failsafe.AsyncExecution-">run(AsyncExecution)</a></span> - Method in interface net.jodah.failsafe.function.<a href="net/jodah/failsafe/function/AsyncRunnable.html" title="interface in net.jodah.failsafe.function">AsyncRunnable</a></dt>
 <dd>&nbsp;</dd>
@@ -870,18 +872,15 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#runAsync-net.jodah.failsafe.function.CheckedRunnable-">runAsync(CheckedRunnable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>runnable</code> asynchronously until successful or until the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is
- exceeded.</div>
+<div class="block">Executes the <code>runnable</code> asynchronously until successful or until the configured policies are exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#runAsync-net.jodah.failsafe.function.ContextualRunnable-">runAsync(ContextualRunnable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>runnable</code> asynchronously until successful or until the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is
- exceeded.</div>
+<div class="block">Executes the <code>runnable</code> asynchronously until successful or until the configured policies are exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#runAsyncExecution-net.jodah.failsafe.function.AsyncRunnable-">runAsyncExecution(AsyncRunnable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
-<div class="block">Executes the <code>runnable</code> asynchronously until successful or until the configured <a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is
- exceeded.</div>
+<div class="block">Executes the <code>runnable</code> asynchronously until successful or until the configured policies are exceeded.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/util/Unchecked.html#runnable-java.util.concurrent.Callable-">runnable(Callable&lt;T&gt;)</a></span> - Static method in class net.jodah.failsafe.util.<a href="net/jodah/failsafe/util/Unchecked.html" title="class in net.jodah.failsafe.util">Unchecked</a></dt>
 <dd>

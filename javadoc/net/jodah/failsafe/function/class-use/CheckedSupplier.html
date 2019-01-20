@@ -105,23 +105,23 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html" title="type parameter in FailsafeExecutor">R</a>&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">FailsafeExecutor.</span><code><span class="memberNameLink"><a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html#futureAsync-net.jodah.failsafe.function.CheckedSupplier-">futureAsync</a></span>(<a href="../../../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent">CompletionStage</a>&lt;T&gt;&gt;&nbsp;supplier)</code>
-<div class="block">Executes the <code>supplier</code> asynchronously until the resulting future is successfully completed or the configured
- <a href="../../../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
+<td class="colFirst"><code>&lt;T extends <a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html" title="type parameter in FailsafeExecutor">R</a>&gt;<br>T</code></td>
+<td class="colLast"><span class="typeNameLabel">FailsafeExecutor.</span><code><span class="memberNameLink"><a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html#get-net.jodah.failsafe.function.CheckedSupplier-">get</a></span>(<a href="../../../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;T&gt;&nbsp;supplier)</code>
+<div class="block">Executes the <code>supplier</code> until a successful result is returned or the configured policies are exceeded.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html" title="type parameter in FailsafeExecutor">R</a>&gt;<br>T</code></td>
-<td class="colLast"><span class="typeNameLabel">FailsafeExecutor.</span><code><span class="memberNameLink"><a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html#get-net.jodah.failsafe.function.CheckedSupplier-">get</a></span>(<a href="../../../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;T&gt;&nbsp;supplier)</code>
-<div class="block">Executes the <code>supplier</code> until a successful result is returned or the configured <a href="../../../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is
+<td class="colFirst"><code>&lt;T extends <a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html" title="type parameter in FailsafeExecutor">R</a>&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">FailsafeExecutor.</span><code><span class="memberNameLink"><a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html#getAsync-net.jodah.failsafe.function.CheckedSupplier-">getAsync</a></span>(<a href="../../../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;T&gt;&nbsp;supplier)</code>
+<div class="block">Executes the <code>supplier</code> asynchronously until a successful result is returned or the configured policies are
  exceeded.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html" title="type parameter in FailsafeExecutor">R</a>&gt;<br><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;T&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">FailsafeExecutor.</span><code><span class="memberNameLink"><a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html#getAsync-net.jodah.failsafe.function.CheckedSupplier-">getAsync</a></span>(<a href="../../../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;T&gt;&nbsp;supplier)</code>
-<div class="block">Executes the <code>supplier</code> asynchronously until a successful result is returned or the configured <a href="../../../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><code>RetryPolicy</code></a> is exceeded.</div>
+<td class="colLast"><span class="typeNameLabel">FailsafeExecutor.</span><code><span class="memberNameLink"><a href="../../../../../net/jodah/failsafe/FailsafeExecutor.html#getStageAsync-net.jodah.failsafe.function.CheckedSupplier-">getStageAsync</a></span>(<a href="../../../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html?is-external=true" title="class or interface in java.util.concurrent">CompletionStage</a>&lt;T&gt;&gt;&nbsp;supplier)</code>
+<div class="block">Executes the <code>supplier</code> asynchronously until the resulting future is successfully completed or the configured
+ policies are exceeded.</div>
 </td>
 </tr>
 <tr class="rowColor">

@@ -144,17 +144,17 @@
 </tr>
 <tr class="altColor">
 <td class="colOne"><a href="../../../net/jodah/failsafe/class-use/FailsafeExecutor.html#net.jodah.failsafe">FailsafeExecutor</a>
-<div class="block">An executor capable of performing executions that where failures are handled according to configured <a href="../../../net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe"><code>policies</code></a>.</div>
+<div class="block">An executor that handles failures according to configured <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe"><code>policies</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><a href="../../../net/jodah/failsafe/class-use/FailurePolicy.html#net.jodah.failsafe">FailurePolicy</a>
-<div class="block">A Policy implementation that captures conditions to determine whether an execution is a failure.</div>
+<div class="block">A Policy that captures conditions to determine whether an execution is a failure.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><a href="../../../net/jodah/failsafe/class-use/Fallback.html#net.jodah.failsafe">Fallback</a>
-<div class="block">A Policy that handles failures using a fallback.</div>
+<div class="block">A Policy that handles failures using a fallback function or result.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -173,16 +173,11 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><a href="../../../net/jodah/failsafe/class-use/PolicyListeners.EventListener.html#net.jodah.failsafe">PolicyListeners.EventListener</a>
-<div class="block">Handles an execution event.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colOne"><a href="../../../net/jodah/failsafe/class-use/RetryPolicy.html#net.jodah.failsafe">RetryPolicy</a>
 <div class="block">A policy that defines when retries should be performed.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><a href="../../../net/jodah/failsafe/class-use/RetryPolicy.DelayFunction.html#net.jodah.failsafe">RetryPolicy.DelayFunction</a>
 <div class="block">A functional interface for computing delays between retries in conjunction with <a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-"><code>RetryPolicy.withDelay(DelayFunction)</code></a>.</div>
 </td>

@@ -69,7 +69,7 @@
 <!--   -->
 </a></div>
 <!-- ========= END OF TOP NAVBAR ========= -->
-<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a name="I:A">
+<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a name="I:A">
 <!--   -->
 </a>
 <h2 class="title">A</h2>
@@ -106,8 +106,6 @@
 <dd>
 <div class="block">Common execution information.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/function/CheckedBiConsumer.html#accept-T-U-">accept(T, U)</a></span> - Method in interface net.jodah.failsafe.function.<a href="net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/function/CheckedConsumer.html#accept-T-">accept(T)</a></span> - Method in interface net.jodah.failsafe.function.<a href="net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/CircuitBreaker.html#allowsExecution--">allowsExecution()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/CircuitBreaker.html" title="class in net.jodah.failsafe">CircuitBreaker</a></dt>
@@ -119,9 +117,7 @@
 <div class="block">Returns whether the policy allows retries according to the configured <a href="net/jodah/failsafe/RetryPolicy.html#withMaxRetries-int-"><code>maxRetries</code></a> and
  <a href="net/jodah/failsafe/RetryPolicy.html#withMaxDuration-java.time.Duration-"><code>maxDuration</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#apply-R-java.lang.Throwable-">apply(R, Throwable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/function/CheckedBiFunction.html#apply-T-U-">apply(T, U)</a></span> - Method in interface net.jodah.failsafe.function.<a href="net/jodah/failsafe/function/CheckedBiFunction.html" title="interface in net.jodah.failsafe.function">CheckedBiFunction</a></dt>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#apply-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">apply(R, Throwable, ExecutionContext)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/function/CheckedFunction.html#apply-T-">apply(T)</a></span> - Method in interface net.jodah.failsafe.function.<a href="net/jodah/failsafe/function/CheckedFunction.html" title="interface in net.jodah.failsafe.function">CheckedFunction</a></dt>
 <dd>&nbsp;</dd>
@@ -168,14 +164,6 @@
 <div class="block">Records an execution and returns true if a retry can be performed for the <code>failure</code>, else returns false and
  marks the execution as complete.</div>
 </dd>
-<dt><a href="net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function"><span class="typeNameLink">CheckedBiConsumer</span></a>&lt;<a href="net/jodah/failsafe/function/CheckedBiConsumer.html" title="type parameter in CheckedBiConsumer">T</a>,<a href="net/jodah/failsafe/function/CheckedBiConsumer.html" title="type parameter in CheckedBiConsumer">U</a>&gt; - Interface in <a href="net/jodah/failsafe/function/package-summary.html">net.jodah.failsafe.function</a></dt>
-<dd>
-<div class="block">A BiConsumer that throws checked exceptions.</div>
-</dd>
-<dt><a href="net/jodah/failsafe/function/CheckedBiFunction.html" title="interface in net.jodah.failsafe.function"><span class="typeNameLink">CheckedBiFunction</span></a>&lt;<a href="net/jodah/failsafe/function/CheckedBiFunction.html" title="type parameter in CheckedBiFunction">T</a>,<a href="net/jodah/failsafe/function/CheckedBiFunction.html" title="type parameter in CheckedBiFunction">U</a>,<a href="net/jodah/failsafe/function/CheckedBiFunction.html" title="type parameter in CheckedBiFunction">R</a>&gt; - Interface in <a href="net/jodah/failsafe/function/package-summary.html">net.jodah.failsafe.function</a></dt>
-<dd>
-<div class="block">A BiFunction that throws checked exceptions.</div>
-</dd>
 <dt><a href="net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function"><span class="typeNameLink">CheckedConsumer</span></a>&lt;<a href="net/jodah/failsafe/function/CheckedConsumer.html" title="type parameter in CheckedConsumer">T</a>&gt; - Interface in <a href="net/jodah/failsafe/function/package-summary.html">net.jodah.failsafe.function</a></dt>
 <dd>
 <div class="block">A Consumer that throws checked exceptions.</div>
@@ -219,15 +207,15 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncExecution.html#complete--">complete()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncExecution.html" title="class in net.jodah.failsafe">AsyncExecution</a></dt>
 <dd>
-<div class="block">Completes the execution and the associated <code>FutureResult</code>.</div>
+<div class="block">Completes the execution and the associated <code>CompletableFuture</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncExecution.html#complete-java.lang.Object-">complete(Object)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncExecution.html" title="class in net.jodah.failsafe">AsyncExecution</a></dt>
 <dd>
-<div class="block">Attempts to complete the execution and the associated <code>FutureResult</code> with the <code>result</code>.</div>
+<div class="block">Attempts to complete the execution and the associated <code>CompletableFuture</code> with the <code>result</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncExecution.html#complete-java.lang.Object-java.lang.Throwable-">complete(Object, Throwable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncExecution.html" title="class in net.jodah.failsafe">AsyncExecution</a></dt>
 <dd>
-<div class="block">Attempts to complete the execution and the associated <code>FutureResult</code> with the <code>result</code> and <code>failure</code>.</div>
+<div class="block">Attempts to complete the execution and the associated <code>CompletableFuture</code> with the <code>result</code> and <code>failure</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/Execution.html#complete--">complete()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Execution.html" title="class in net.jodah.failsafe">Execution</a></dt>
 <dd>
@@ -250,6 +238,8 @@
 <dd>
 <div class="block">A Supplier that provides execution context.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/ExecutionContext.html#copy--">copy()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#copy--">copy()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
 <div class="block">Returns a copy of this RetryPolicy.</div>
@@ -332,7 +322,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe"><span class="typeNameLink">FailsafeExecutor</span></a>&lt;<a href="net/jodah/failsafe/FailsafeExecutor.html" title="type parameter in FailsafeExecutor">R</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
-<div class="block">An executor capable of performing executions that where failures are handled according to configured <a href="net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe"><code>policies</code></a>.</div>
+<div class="block">An executor that handles failures according to configured <a href="net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe"><code>policies</code></a>.</div>
 </dd>
 <dt><a href="net/jodah/failsafe/FailsafeFuture.html" title="class in net.jodah.failsafe"><span class="typeNameLink">FailsafeFuture</span></a>&lt;<a href="net/jodah/failsafe/FailsafeFuture.html" title="type parameter in FailsafeFuture">T</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
@@ -344,11 +334,11 @@
 </dd>
 <dt><a href="net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe"><span class="typeNameLink">FailurePolicy</span></a>&lt;<a href="net/jodah/failsafe/FailurePolicy.html" title="type parameter in FailurePolicy">S</a>,<a href="net/jodah/failsafe/FailurePolicy.html" title="type parameter in FailurePolicy">R</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
-<div class="block">A Policy implementation that captures conditions to determine whether an execution is a failure.</div>
+<div class="block">A Policy that captures conditions to determine whether an execution is a failure.</div>
 </dd>
 <dt><a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe"><span class="typeNameLink">Fallback</span></a>&lt;<a href="net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
-<div class="block">A Policy that handles failures using a fallback.</div>
+<div class="block">A Policy that handles failures using a fallback function or result.</div>
 </dd>
 </dl>
 <a name="I:G">
@@ -476,6 +466,10 @@
 <dd>
 <div class="block">Returns the result that preceeded the event, else <code>null</code> if there was none.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#getMaxAttempts--">getMaxAttempts()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Returns the max number of execution attempts to perform.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#getMaxDelay--">getMaxDelay()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
 <div class="block">Returns the max delay between backoff retries.</div>
@@ -572,10 +566,6 @@
 <dd>
 <div class="block">Specifies the failures to retryOn.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyListeners.EventListener.html#handle-java.lang.Object-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">handle(Object, Throwable, ExecutionContext)</a></span> - Method in interface net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyListeners.EventListener.html" title="interface in net.jodah.failsafe">PolicyListeners.EventListener</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyListeners.EventListener.html#handle-net.jodah.failsafe.ExecutionResult-net.jodah.failsafe.ExecutionContext-">handle(ExecutionResult, ExecutionContext)</a></span> - Method in interface net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyListeners.EventListener.html" title="interface in net.jodah.failsafe">PolicyListeners.EventListener</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailurePolicy.html#handleIf-java.util.function.Predicate-">handleIf(Predicate&lt;? extends Throwable&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe">FailurePolicy</a></dt>
 <dd>
 <div class="block">Specifies that a failure has occurred if the <code>failurePredicate</code> matches the failure.</div>
@@ -605,6 +595,10 @@
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#isAbortable-R-java.lang.Throwable-">isAbortable(R, Throwable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
 <div class="block">Returns whether an execution result can be aborted given the configured abort conditions.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#isAsync--">isAsync()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
+<dd>
+<div class="block">Returns whether the Fallback is configured to handle execution results asynchronously, separate from execution..</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/util/concurrent/DefaultScheduledFuture.html#isCancelled--">isCancelled()</a></span> - Method in class net.jodah.failsafe.util.concurrent.<a href="net/jodah/failsafe/util/concurrent/DefaultScheduledFuture.html" title="class in net.jodah.failsafe.util.concurrent">DefaultScheduledFuture</a></dt>
 <dd>&nbsp;</dd>
@@ -668,42 +662,46 @@
 </a>
 <h2 class="title">O</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedBiFunction-">of(CheckedBiFunction&lt;? extends R, ? extends Throwable, ? extends R&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedRunnable-">of(CheckedRunnable)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
 <dd>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedSupplier-">of(CheckedSupplier&lt;? extends R&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
 <dd>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedBiConsumer-">of(CheckedBiConsumer&lt;? extends R, ? extends Throwable&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedConsumer-">of(CheckedConsumer&lt;ExecutionAttemptedEvent&lt;? extends R&gt;&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
 <dd>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedConsumer-">of(CheckedConsumer&lt;? extends Throwable&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedFunction-">of(CheckedFunction&lt;ExecutionAttemptedEvent&lt;? extends R&gt;, ? extends R&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
 <dd>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedFunction-">of(CheckedFunction&lt;? extends Throwable, ? extends R&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
-<dd>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedRunnable-">of(CheckedRunnable)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
-<dd>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#of-R-">of(R)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
 <dd>
 <div class="block">Configures the <code>fallback</code> result to be returned if execution fails.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyListeners.EventListener.html#of-net.jodah.failsafe.function.CheckedConsumer-">of(CheckedConsumer&lt;? extends ExecutionCompletedEvent&lt;R&gt;&gt;)</a></span> - Static method in interface net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyListeners.EventListener.html" title="interface in net.jodah.failsafe">PolicyListeners.EventListener</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/util/concurrent/Scheduler.html#of-java.util.concurrent.ScheduledExecutorService-">of(ScheduledExecutorService)</a></span> - Static method in interface net.jodah.failsafe.util.concurrent.<a href="net/jodah/failsafe/util/concurrent/Scheduler.html" title="interface in net.jodah.failsafe.util.concurrent">Scheduler</a></dt>
 <dd>
 <div class="block">Returns a Scheduler adapted from the <code>executor</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyListeners.EventListener.html#ofAttempt-net.jodah.failsafe.function.CheckedConsumer-">ofAttempt(CheckedConsumer&lt;? extends ExecutionAttemptedEvent&lt;R&gt;&gt;)</a></span> - Static method in interface net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyListeners.EventListener.html" title="interface in net.jodah.failsafe">PolicyListeners.EventListener</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#ofAsync-net.jodah.failsafe.function.CheckedRunnable-">ofAsync(CheckedRunnable)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
+<dd>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#ofAsync-net.jodah.failsafe.function.CheckedSupplier-">ofAsync(CheckedSupplier&lt;? extends R&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
+<dd>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#ofAsync-net.jodah.failsafe.function.CheckedConsumer-">ofAsync(CheckedConsumer&lt;ExecutionAttemptedEvent&lt;? extends R&gt;&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
+<dd>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#ofAsync-net.jodah.failsafe.function.CheckedFunction-">ofAsync(CheckedFunction&lt;ExecutionAttemptedEvent&lt;? extends R&gt;, ? extends R&gt;)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
+<dd>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#onAbort-net.jodah.failsafe.function.CheckedConsumer-">onAbort(CheckedConsumer&lt;? extends ExecutionCompletedEvent&lt;R&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
 <div class="block">Registers the <code>listener</code> to be called when an execution is aborted.</div>
@@ -777,13 +775,9 @@
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyListeners.html#PolicyListeners--">PolicyListeners()</a></span> - Constructor for class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyListeners.html" title="class in net.jodah.failsafe">PolicyListeners</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="net/jodah/failsafe/PolicyListeners.EventListener.html" title="interface in net.jodah.failsafe"><span class="typeNameLink">PolicyListeners.EventListener</span></a> - Interface in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
-<dd>
-<div class="block">Handles an execution event.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/CircuitBreaker.html#preExecute--">preExecute()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/CircuitBreaker.html" title="class in net.jodah.failsafe">CircuitBreaker</a></dt>
 <dd>
-<div class="block">Recods an execution that is about to take place by incrementing the internal executions count.</div>
+<div class="block">Records an execution that is about to take place by incrementing the internal executions count.</div>
 </dd>
 </dl>
 <a name="I:R">
@@ -823,22 +817,22 @@
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncExecution.html#retry--">retry()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncExecution.html" title="class in net.jodah.failsafe">AsyncExecution</a></dt>
 <dd>
 <div class="block">Records an execution and returns true if a retry has been scheduled for else returns returns false and completes
- the execution and associated <code>FutureResult</code>.</div>
+ the execution and associated <code>CompletableFuture</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncExecution.html#retryFor-java.lang.Object-">retryFor(Object)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncExecution.html" title="class in net.jodah.failsafe">AsyncExecution</a></dt>
 <dd>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>result</code>, else returns false and
- marks the execution and associated <code>FutureResult</code> as complete.</div>
+ marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncExecution.html#retryFor-java.lang.Object-java.lang.Throwable-">retryFor(Object, Throwable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncExecution.html" title="class in net.jodah.failsafe">AsyncExecution</a></dt>
 <dd>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>result</code> or <code>failure</code>, else
- returns false and marks the execution and associated <code>FutureResult</code> as complete.</div>
+ returns false and marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/AsyncExecution.html#retryOn-java.lang.Throwable-">retryOn(Throwable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/AsyncExecution.html" title="class in net.jodah.failsafe">AsyncExecution</a></dt>
 <dd>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>failure</code>, else returns false and
- marks the execution and associated <code>FutureResult</code> as complete.</div>
+ marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 </dd>
 <dt><a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe"><span class="typeNameLink">RetryPolicy</span></a>&lt;<a href="net/jodah/failsafe/RetryPolicy.html" title="type parameter in RetryPolicy">R</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
@@ -846,7 +840,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#RetryPolicy--">RetryPolicy()</a></span> - Constructor for class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
-<div class="block">Creates a retry policy that always retries with no delay.</div>
+<div class="block">Creates a retry policy that allows 3 execution attempts max with no delay.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#RetryPolicy-net.jodah.failsafe.RetryPolicy-">RetryPolicy(RetryPolicy&lt;R&gt;)</a></span> - Constructor for class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
@@ -882,10 +876,6 @@
 <dd>
 <div class="block">Executes the <code>runnable</code> asynchronously until successful or until the configured policies are exceeded.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/util/Unchecked.html#runnable-java.util.concurrent.Callable-">runnable(Callable&lt;T&gt;)</a></span> - Static method in class net.jodah.failsafe.util.<a href="net/jodah/failsafe/util/Unchecked.html" title="class in net.jodah.failsafe.util">Unchecked</a></dt>
-<dd>
-<div class="block">Returns a Runnable for the <code>callable</code> that wraps and re-throws any checked Exception in a RuntimeException.</div>
-</dd>
 </dl>
 <a name="I:S">
 <!--   -->
@@ -904,10 +894,6 @@
 <dd>
 <div class="block">Returns a an ExecutionResult with the <code>result</code> set, <code>completed</code> true and <code>success</code> true.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="net/jodah/failsafe/util/Unchecked.html#supplier-java.util.concurrent.Callable-">supplier(Callable&lt;T&gt;)</a></span> - Static method in class net.jodah.failsafe.util.<a href="net/jodah/failsafe/util/Unchecked.html" title="class in net.jodah.failsafe.util">Unchecked</a></dt>
-<dd>
-<div class="block">Returns a Supplier for the <code>callable</code> that wraps and re-throws any checked Exception in a RuntimeException.</div>
-</dd>
 </dl>
 <a name="I:T">
 <!--   -->
@@ -919,7 +905,10 @@
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/Fallback.html#toExecutor--">toExecutor()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/Policy.html#toExecutor--">toExecutor()</a></span> - Method in interface net.jodah.failsafe.<a href="net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe">Policy</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns an <a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe"><code>PolicyExecutor</code></a> capable of performing an execution in the context of a Policy and handling
+ results according to the Policy.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#toExecutor--">toExecutor()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/CircuitBreaker.html#toString--">toString()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/CircuitBreaker.html" title="class in net.jodah.failsafe">CircuitBreaker</a></dt>
@@ -932,16 +921,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/util/Ratio.html#toString--">toString()</a></span> - Method in class net.jodah.failsafe.util.<a href="net/jodah/failsafe/util/Ratio.html" title="class in net.jodah.failsafe.util">Ratio</a></dt>
 <dd>&nbsp;</dd>
-</dl>
-<a name="I:U">
-<!--   -->
-</a>
-<h2 class="title">U</h2>
-<dl>
-<dt><a href="net/jodah/failsafe/util/Unchecked.html" title="class in net.jodah.failsafe.util"><span class="typeNameLink">Unchecked</span></a> - Class in <a href="net/jodah/failsafe/util/package-summary.html">net.jodah.failsafe.util</a></dt>
-<dd>
-<div class="block">Tools for adapting checked exceptions to unchecked.</div>
-</dd>
 </dl>
 <a name="I:V">
 <!--   -->
@@ -969,8 +948,7 @@ the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/Failsafe.html#with-P...-">with(P...)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/Failsafe.html" title="class in net.jodah.failsafe">Failsafe</a></dt>
 <dd>
-<div class="block">Creates and returns a new <a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe"><code>FailsafeExecutor</code></a> instance that will perform executions and retries according to
- the provided <code>policies</code>.</div>
+<div class="block">Creates and returns a new <a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe"><code>FailsafeExecutor</code></a> instance that will handle failures according to the given <code>policies</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailsafeExecutor.html#with-java.util.concurrent.ScheduledExecutorService-">with(ScheduledExecutorService)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a></dt>
 <dd>
@@ -1034,6 +1012,10 @@ the order they are declared.</div>
 <dd>
 <div class="block">Sets the <code>jitter</code> to randomly vary retry delays by.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#withMaxAttempts-int-">withMaxAttempts(int)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
+<dd>
+<div class="block">Sets the max number of execution attempts to perform.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/RetryPolicy.html#withMaxDuration-java.time.Duration-">withMaxDuration(Duration)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a></dt>
 <dd>
 <div class="block">Sets the max duration to perform retries for, else the execution will be failed.</div>
@@ -1061,7 +1043,7 @@ the order they are declared.</div>
 <div class="block">Sets the <code>timeout</code> for executions.</div>
 </dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>
+<a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
 <!--   -->

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -74,7 +74,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.net.jodah.failsafe.PolicyListeners">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -129,28 +129,13 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Fallback&lt;R&gt;</span>
 extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe">FailurePolicy</a>&lt;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;,R&gt;</pre>
-<div class="block">A Policy that handles failures using a fallback.</div>
+<div class="block">A Policy that handles failures using a fallback function or result.</div>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.net.jodah.failsafe.PolicyListeners">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;net.jodah.failsafe.<a href="../../../net/jodah/failsafe/PolicyListeners.html" title="class in net.jodah.failsafe">PolicyListeners</a></h3>
-<code><a href="../../../net/jodah/failsafe/PolicyListeners.EventListener.html" title="interface in net.jodah.failsafe">PolicyListeners.EventListener</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -164,55 +149,77 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#apply-R-java.lang.Throwable-">apply</a></span>(<a href="../../../net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a>&nbsp;result,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#apply-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">apply</a></span>(<a href="../../../net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a>&nbsp;result,
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
+     <a href="../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedBiConsumer-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends R,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;fallback)</code>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#isAsync--">isAsync</a></span>()</code>
+<div class="block">Returns whether the Fallback is configured to handle execution results asynchronously, separate from execution..</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedBiFunction-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedBiFunction.html" title="interface in net.jodah.failsafe.function">CheckedBiFunction</a>&lt;? extends R,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>,? extends R&gt;&nbsp;fallback)</code>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedConsumer-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;<a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event">ExecutionAttemptedEvent</a>&lt;? extends R&gt;&gt;&nbsp;fallback)</code>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedConsumer-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;fallback)</code>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedFunction-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedFunction.html" title="interface in net.jodah.failsafe.function">CheckedFunction</a>&lt;<a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event">ExecutionAttemptedEvent</a>&lt;? extends R&gt;,? extends R&gt;&nbsp;fallback)</code>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedFunction-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedFunction.html" title="interface in net.jodah.failsafe.function">CheckedFunction</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>,? extends R&gt;&nbsp;fallback)</code>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedRunnable-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedRunnable.html" title="interface in net.jodah.failsafe.function">CheckedRunnable</a>&nbsp;fallback)</code>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedRunnable-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedRunnable.html" title="interface in net.jodah.failsafe.function">CheckedRunnable</a>&nbsp;fallback)</code>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedSupplier-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;? extends R&gt;&nbsp;fallback)</code>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-net.jodah.failsafe.function.CheckedSupplier-">of</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;? extends R&gt;&nbsp;fallback)</code>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#of-R-">of</a></span>(R&nbsp;fallback)</code>
 <div class="block">Configures the <code>fallback</code> result to be returned if execution fails.</div>
 </td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#ofAsync-net.jodah.failsafe.function.CheckedConsumer-">ofAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;<a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event">ExecutionAttemptedEvent</a>&lt;? extends R&gt;&gt;&nbsp;fallback)</code>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
+</td>
+</tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#ofAsync-net.jodah.failsafe.function.CheckedFunction-">ofAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedFunction.html" title="interface in net.jodah.failsafe.function">CheckedFunction</a>&lt;<a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event">ExecutionAttemptedEvent</a>&lt;? extends R&gt;,? extends R&gt;&nbsp;fallback)</code>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#ofAsync-net.jodah.failsafe.function.CheckedRunnable-">ofAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedRunnable.html" title="interface in net.jodah.failsafe.function">CheckedRunnable</a>&nbsp;fallback)</code>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static &lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#ofAsync-net.jodah.failsafe.function.CheckedSupplier-">ofAsync</a></span>(<a href="../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;? extends R&gt;&nbsp;fallback)</code>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#toExecutor--">toExecutor</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/Fallback.html#toExecutor--">toExecutor</a></span>()</code>
+<div class="block">Returns an <a href="../../../net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe"><code>PolicyExecutor</code></a> capable of performing an execution in the context of a Policy and handling
+ results according to the Policy.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -250,14 +257,28 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="of-net.jodah.failsafe.function.CheckedBiFunction-">
+<a name="of-net.jodah.failsafe.function.CheckedRunnable-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedBiFunction.html" title="interface in net.jodah.failsafe.function">CheckedBiFunction</a>&lt;? extends R,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>,? extends R&gt;&nbsp;fallback)</pre>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedRunnable.html" title="interface in net.jodah.failsafe.function">CheckedRunnable</a>&nbsp;fallback)</pre>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>fallback</code> is null</dd>
+</dl>
+</li>
+</ul>
+<a name="ofAsync-net.jodah.failsafe.function.CheckedRunnable-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ofAsync</h4>
+<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;ofAsync(<a href="../../../net/jodah/failsafe/function/CheckedRunnable.html" title="interface in net.jodah.failsafe.function">CheckedRunnable</a>&nbsp;fallback)</pre>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>fallback</code> is null</dd>
@@ -271,21 +292,21 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <li class="blockList">
 <h4>of</h4>
 <pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;? extends R&gt;&nbsp;fallback)</pre>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>fallback</code> is null</dd>
 </dl>
 </li>
 </ul>
-<a name="of-net.jodah.failsafe.function.CheckedBiConsumer-">
+<a name="ofAsync-net.jodah.failsafe.function.CheckedSupplier-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>of</h4>
-<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedBiConsumer.html" title="interface in net.jodah.failsafe.function">CheckedBiConsumer</a>&lt;? extends R,? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;fallback)</pre>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<h4>ofAsync</h4>
+<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;ofAsync(<a href="../../../net/jodah/failsafe/function/CheckedSupplier.html" title="interface in net.jodah.failsafe.function">CheckedSupplier</a>&lt;? extends R&gt;&nbsp;fallback)</pre>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>fallback</code> is null</dd>
@@ -298,8 +319,23 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;&nbsp;fallback)</pre>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;<a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event">ExecutionAttemptedEvent</a>&lt;? extends R&gt;&gt;&nbsp;fallback)</pre>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails. The <code>fallback</code> accepts an <a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event"><code>ExecutionAttemptedEvent</code></a>.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>fallback</code> is null</dd>
+</dl>
+</li>
+</ul>
+<a name="ofAsync-net.jodah.failsafe.function.CheckedConsumer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ofAsync</h4>
+<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;ofAsync(<a href="../../../net/jodah/failsafe/function/CheckedConsumer.html" title="interface in net.jodah.failsafe.function">CheckedConsumer</a>&lt;<a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event">ExecutionAttemptedEvent</a>&lt;? extends R&gt;&gt;&nbsp;fallback)</pre>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails. The <code>fallback</code> accepts an
+ <a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event"><code>ExecutionAttemptedEvent</code></a>.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>fallback</code> is null</dd>
@@ -312,22 +348,23 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <ul class="blockList">
 <li class="blockList">
 <h4>of</h4>
-<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedFunction.html" title="interface in net.jodah.failsafe.function">CheckedFunction</a>&lt;? extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>,? extends R&gt;&nbsp;fallback)</pre>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedFunction.html" title="interface in net.jodah.failsafe.function">CheckedFunction</a>&lt;<a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event">ExecutionAttemptedEvent</a>&lt;? extends R&gt;,? extends R&gt;&nbsp;fallback)</pre>
+<div class="block">Configures the <code>fallback</code> to be executed if execution fails. The <code>fallback</code> applies an <a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event"><code>ExecutionAttemptedEvent</code></a>.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>fallback</code> is null</dd>
 </dl>
 </li>
 </ul>
-<a name="of-net.jodah.failsafe.function.CheckedRunnable-">
+<a name="ofAsync-net.jodah.failsafe.function.CheckedFunction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>of</h4>
-<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;of(<a href="../../../net/jodah/failsafe/function/CheckedRunnable.html" title="interface in net.jodah.failsafe.function">CheckedRunnable</a>&nbsp;fallback)</pre>
-<div class="block">Configures the <code>fallback</code> action to be executed if execution fails.</div>
+<h4>ofAsync</h4>
+<pre>public static&nbsp;&lt;R&gt;&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;&nbsp;ofAsync(<a href="../../../net/jodah/failsafe/function/CheckedFunction.html" title="interface in net.jodah.failsafe.function">CheckedFunction</a>&lt;<a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event">ExecutionAttemptedEvent</a>&lt;? extends R&gt;,? extends R&gt;&nbsp;fallback)</pre>
+<div class="block">Configures the <code>fallback</code> to be executed asynchronously if execution fails. The <code>fallback</code> applies an
+ <a href="../../../net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event"><code>ExecutionAttemptedEvent</code></a>.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>fallback</code> is null</dd>
@@ -350,21 +387,32 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 </dl>
 </li>
 </ul>
-<a name="apply-java.lang.Object-java.lang.Throwable-">
+<a name="apply-java.lang.Object-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">
 <!--   -->
-</a><a name="apply-R-java.lang.Throwable-">
+</a><a name="apply-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>apply</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;apply(<a href="../../../net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a>&nbsp;result,
-                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure)
-             throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<pre>public&nbsp;<a href="../../../net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a>&nbsp;apply(<a href="../../../net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a>&nbsp;result,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
+               <a href="../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)
+        throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="isAsync--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAsync</h4>
+<pre>public&nbsp;boolean&nbsp;isAsync()</pre>
+<div class="block">Returns whether the Fallback is configured to handle execution results asynchronously, separate from execution..</div>
 </li>
 </ul>
 <a name="toExecutor--">
@@ -374,6 +422,9 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <li class="blockList">
 <h4>toExecutor</h4>
 <pre>public&nbsp;<a href="../../../net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a>&nbsp;toExecutor()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../net/jodah/failsafe/Policy.html#toExecutor--">Policy</a></code></span></div>
+<div class="block">Returns an <a href="../../../net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe"><code>PolicyExecutor</code></a> capable of performing an execution in the context of a Policy and handling
+ results according to the Policy.</div>
 </li>
 </ul>
 </li>
@@ -429,7 +480,7 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.net.jodah.failsafe.PolicyListeners">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

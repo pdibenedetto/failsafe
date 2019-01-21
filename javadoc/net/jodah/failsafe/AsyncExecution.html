@@ -144,34 +144,34 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncExecution.html#complete--">complete</a></span>()</code>
-<div class="block">Completes the execution and the associated <code>FutureResult</code>.</div>
+<div class="block">Completes the execution and the associated <code>CompletableFuture</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncExecution.html#complete-java.lang.Object-">complete</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>
-<div class="block">Attempts to complete the execution and the associated <code>FutureResult</code> with the <code>result</code>.</div>
+<div class="block">Attempts to complete the execution and the associated <code>CompletableFuture</code> with the <code>result</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncExecution.html#complete-java.lang.Object-java.lang.Throwable-">complete</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result,
         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure)</code>
-<div class="block">Attempts to complete the execution and the associated <code>FutureResult</code> with the <code>result</code> and <code>failure</code>.</div>
+<div class="block">Attempts to complete the execution and the associated <code>CompletableFuture</code> with the <code>result</code> and <code>failure</code>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncExecution.html#retry--">retry</a></span>()</code>
 <div class="block">Records an execution and returns true if a retry has been scheduled for else returns returns false and completes
- the execution and associated <code>FutureResult</code>.</div>
+ the execution and associated <code>CompletableFuture</code>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncExecution.html#retryFor-java.lang.Object-">retryFor</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</code>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>result</code>, else returns false and
- marks the execution and associated <code>FutureResult</code> as complete.</div>
+ marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -179,14 +179,14 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncExecution.html#retryFor-java.lang.Object-java.lang.Throwable-">retryFor</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result,
         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure)</code>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>result</code> or <code>failure</code>, else
- returns false and marks the execution and associated <code>FutureResult</code> as complete.</div>
+ returns false and marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/AsyncExecution.html#retryOn-java.lang.Throwable-">retryOn</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure)</code>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>failure</code>, else returns false and
- marks the execution and associated <code>FutureResult</code> as complete.</div>
+ marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 </td>
 </tr>
 </table>
@@ -202,7 +202,7 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.jodah.failsafe.<a href="../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a></h3>
-<code><a href="../../../net/jodah/failsafe/ExecutionContext.html#getAttemptCount--">getAttemptCount</a>, <a href="../../../net/jodah/failsafe/ExecutionContext.html#getElapsedTime--">getElapsedTime</a>, <a href="../../../net/jodah/failsafe/ExecutionContext.html#getStartTime--">getStartTime</a></code></li>
+<code><a href="../../../net/jodah/failsafe/ExecutionContext.html#copy--">copy</a>, <a href="../../../net/jodah/failsafe/ExecutionContext.html#getAttemptCount--">getAttemptCount</a>, <a href="../../../net/jodah/failsafe/ExecutionContext.html#getElapsedTime--">getElapsedTime</a>, <a href="../../../net/jodah/failsafe/ExecutionContext.html#getStartTime--">getStartTime</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -232,7 +232,7 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <li class="blockList">
 <h4>complete</h4>
 <pre>public&nbsp;void&nbsp;complete()</pre>
-<div class="block">Completes the execution and the associated <code>FutureResult</code>.</div>
+<div class="block">Completes the execution and the associated <code>CompletableFuture</code>.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the execution is already complete</dd>
@@ -246,8 +246,8 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <li class="blockList">
 <h4>complete</h4>
 <pre>public&nbsp;boolean&nbsp;complete(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</pre>
-<div class="block">Attempts to complete the execution and the associated <code>FutureResult</code> with the <code>result</code>. Returns true on
- success, else false if completion failed and the execution should be retried via <a href="../../../net/jodah/failsafe/AsyncExecution.html#retry--"><code>retry()</code></a>.</div>
+<div class="block">Attempts to complete the execution and the associated <code>CompletableFuture</code> with the <code>result</code>. Returns
+ true on success, else false if completion failed and the execution should be retried via <a href="../../../net/jodah/failsafe/AsyncExecution.html#retry--"><code>retry()</code></a>.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the execution is already complete</dd>
@@ -262,7 +262,7 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <h4>complete</h4>
 <pre>public&nbsp;boolean&nbsp;complete(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result,
                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure)</pre>
-<div class="block">Attempts to complete the execution and the associated <code>FutureResult</code> with the <code>result</code> and <code>failure</code>. Returns true on success, else false if completion failed and the execution should be retried via <a href="../../../net/jodah/failsafe/AsyncExecution.html#retry--"><code>retry()</code></a>.
+<div class="block">Attempts to complete the execution and the associated <code>CompletableFuture</code> with the <code>result</code> and <code>failure</code>. Returns true on success, else false if completion failed and the execution should be retried via <a href="../../../net/jodah/failsafe/AsyncExecution.html#retry--"><code>retry()</code></a>.
  <p>
  Note: the execution may be completed even when the <code>failure</code> is not <code>null</code>, such as when the
  RetryPolicy does not allow retries for the <code>failure</code>.</div>
@@ -280,7 +280,7 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <h4>retry</h4>
 <pre>public&nbsp;boolean&nbsp;retry()</pre>
 <div class="block">Records an execution and returns true if a retry has been scheduled for else returns returns false and completes
- the execution and associated <code>FutureResult</code>.</div>
+ the execution and associated <code>CompletableFuture</code>.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a retry method has already been called or the execution is already complete</dd>
@@ -295,7 +295,7 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <h4>retryFor</h4>
 <pre>public&nbsp;boolean&nbsp;retryFor(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result)</pre>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>result</code>, else returns false and
- marks the execution and associated <code>FutureResult</code> as complete.</div>
+ marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a retry method has already been called or the execution is already complete</dd>
@@ -311,7 +311,7 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <pre>public&nbsp;boolean&nbsp;retryFor(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result,
                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure)</pre>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>result</code> or <code>failure</code>, else
- returns false and marks the execution and associated <code>FutureResult</code> as complete.</div>
+ returns false and marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a retry method has already been called or the execution is already complete</dd>
@@ -326,7 +326,7 @@ extends <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="clas
 <h4>retryOn</h4>
 <pre>public&nbsp;boolean&nbsp;retryOn(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure)</pre>
 <div class="block">Records an execution and returns true if a retry has been scheduled for the <code>failure</code>, else returns false and
- marks the execution and associated <code>FutureResult</code> as complete.</div>
+ marks the execution and associated <code>CompletableFuture</code> as complete.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>failure</code> is null</dd>

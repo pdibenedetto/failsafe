@@ -137,6 +137,19 @@
 </tbody>
 </table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a> that return <a href="../../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ExecutionContext.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/ExecutionContext.html#copy--">copy</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a> with parameters of type <a href="../../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -144,6 +157,12 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Fallback.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/Fallback.html#apply-R-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">apply</a></span>(<a href="../../../../net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a>&nbsp;result,
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
+     <a href="../../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a></code></td>
 <td class="colLast"><span class="typeNameLabel">RetryPolicy.DelayFunction.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html#computeDelay-R-F-net.jodah.failsafe.ExecutionContext-">computeDelay</a></span>(<a href="../../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">R</a>&nbsp;result,
             <a href="../../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="type parameter in RetryPolicy.DelayFunction">F</a>&nbsp;failure,
@@ -151,17 +170,6 @@
 <div class="block">Returns the amount of delay before the next retry based on the result or failure of the last attempt and the
  execution context (executions so far).</div>
 </td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<td class="colLast"><span class="typeNameLabel">PolicyListeners.EventListener.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/PolicyListeners.EventListener.html#handle-net.jodah.failsafe.ExecutionResult-net.jodah.failsafe.ExecutionContext-">handle</a></span>(<a href="../../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result,
-      <a href="../../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">PolicyListeners.EventListener.</span><code><span class="memberNameLink"><a href="../../../../net/jodah/failsafe/PolicyListeners.EventListener.html#handle-java.lang.Object-java.lang.Throwable-net.jodah.failsafe.ExecutionContext-">handle</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;result,
-      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;failure,
-      <a href="../../../../net/jodah/failsafe/ExecutionContext.html" title="class in net.jodah.failsafe">ExecutionContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

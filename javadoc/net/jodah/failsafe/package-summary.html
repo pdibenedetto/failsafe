@@ -93,12 +93,6 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../net/jodah/failsafe/PolicyListeners.EventListener.html" title="interface in net.jodah.failsafe">PolicyListeners.EventListener</a></td>
-<td class="colLast">
-<div class="block">Handles an execution event.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="../../../net/jodah/failsafe/RetryPolicy.DelayFunction.html" title="interface in net.jodah.failsafe">RetryPolicy.DelayFunction</a>&lt;R,F extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&gt;</td>
 <td class="colLast">
 <div class="block">A functional interface for computing delays between retries in conjunction with <a href="../../../net/jodah/failsafe/RetryPolicy.html#withDelay-net.jodah.failsafe.RetryPolicy.DelayFunction-"><code>RetryPolicy.withDelay(DelayFunction)</code></a>.</div>
@@ -160,7 +154,7 @@
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../net/jodah/failsafe/FailsafeExecutor.html" title="class in net.jodah.failsafe">FailsafeExecutor</a>&lt;R&gt;</td>
 <td class="colLast">
-<div class="block">An executor capable of performing executions that where failures are handled according to configured <a href="../../../net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe"><code>policies</code></a>.</div>
+<div class="block">An executor that handles failures according to configured <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe"><code>policies</code></a>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -172,13 +166,13 @@
 <tr class="rowColor">
 <td class="colFirst"><a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe">FailurePolicy</a>&lt;S,R&gt;</td>
 <td class="colLast">
-<div class="block">A Policy implementation that captures conditions to determine whether an execution is a failure.</div>
+<div class="block">A Policy that captures conditions to determine whether an execution is a failure.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><a href="../../../net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe">Fallback</a>&lt;R&gt;</td>
 <td class="colLast">
-<div class="block">A Policy that handles failures using a fallback.</div>
+<div class="block">A Policy that handles failures using a fallback function or result.</div>
 </td>
 </tr>
 <tr class="rowColor">

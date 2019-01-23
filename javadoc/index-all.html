@@ -272,6 +272,8 @@
 <dd>
 <div class="block">Creates a new <a href="net/jodah/failsafe/Execution.html" title="class in net.jodah.failsafe"><code>Execution</code></a> that will use the <code>policies</code> to handle failures.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#execution">execution</a></span> - Variable in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="class in net.jodah.failsafe.event"><span class="typeNameLink">ExecutionAttemptedEvent</span></a>&lt;<a href="net/jodah/failsafe/event/ExecutionAttemptedEvent.html" title="type parameter in ExecutionAttemptedEvent">R</a>&gt; - Class in <a href="net/jodah/failsafe/event/package-summary.html">net.jodah.failsafe.event</a></dt>
 <dd>
 <div class="block">Indicates an execution was attempted.</div>
@@ -332,9 +334,17 @@
 <dd>
 <div class="block">Returns a an ExecutionResult with the <code>failure</code> set, <code>completed</code> true and <code>success</code> false.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailurePolicy.html#failureConditions">failureConditions</a></span> - Variable in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe">FailurePolicy</a></dt>
+<dd>
+<div class="block">Conditions that determine whether an execution is a failure</div>
+</dd>
 <dt><a href="net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe"><span class="typeNameLink">FailurePolicy</span></a>&lt;<a href="net/jodah/failsafe/FailurePolicy.html" title="type parameter in FailurePolicy">S</a>,<a href="net/jodah/failsafe/FailurePolicy.html" title="type parameter in FailurePolicy">R</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
 <div class="block">A Policy that captures conditions to determine whether an execution is a failure.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/FailurePolicy.html#failuresChecked">failuresChecked</a></span> - Variable in class net.jodah.failsafe.<a href="net/jodah/failsafe/FailurePolicy.html" title="class in net.jodah.failsafe">FailurePolicy</a></dt>
+<dd>
+<div class="block">Indicates whether failures are checked by a configured failure condition</div>
 </dd>
 <dt><a href="net/jodah/failsafe/Fallback.html" title="class in net.jodah.failsafe"><span class="typeNameLink">Fallback</span></a>&lt;<a href="net/jodah/failsafe/Fallback.html" title="type parameter in Fallback">R</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
@@ -618,6 +628,10 @@
 <dd>
 <div class="block">Returns whether an execution result can be retried given the configured failure conditions.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#isFailure-net.jodah.failsafe.ExecutionResult-">isFailure(ExecutionResult)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Returns whether the <code>result</code> is a success according to the policy.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/CircuitBreaker.html#isHalfOpen--">isHalfOpen()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/CircuitBreaker.html" title="class in net.jodah.failsafe">CircuitBreaker</a></dt>
 <dd>
 <div class="block">Returns whether the circuit is half open.</div>
@@ -723,9 +737,18 @@
 <dd>
 <div class="block">Registers the <code>listener</code> to be called when an execution fails.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#onFailure-net.jodah.failsafe.ExecutionResult-">onFailure(ExecutionResult)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Performs post-execution handling for a <code>result</code> that is considered a failure according to <a href="net/jodah/failsafe/PolicyExecutor.html#isFailure-net.jodah.failsafe.ExecutionResult-"><code>PolicyExecutor.isFailure(ExecutionResult)</code></a>, possibly creating a new result, else returning the original <code>result</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyListeners.html#onFailure-net.jodah.failsafe.function.CheckedConsumer-">onFailure(CheckedConsumer&lt;? extends ExecutionCompletedEvent&lt;R&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyListeners.html" title="class in net.jodah.failsafe">PolicyListeners</a></dt>
 <dd>
 <div class="block">Registers the <code>listener</code> to be called when an execution fails for a <a href="net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe"><code>Policy</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#onFailureAsync-net.jodah.failsafe.ExecutionResult-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">onFailureAsync(ExecutionResult, Scheduler, FailsafeFuture&lt;Object&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Performs potentially asynchrononus post-execution handling for a failed <code>result</code>, possibly creating a new
+ result, else returning the original <code>result</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/CircuitBreaker.html#onHalfOpen-net.jodah.failsafe.function.CheckedRunnable-">onHalfOpen(CheckedRunnable)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/CircuitBreaker.html" title="class in net.jodah.failsafe">CircuitBreaker</a></dt>
 <dd>
@@ -747,6 +770,10 @@
 <dd>
 <div class="block">Registers the <code>listener</code> to be called when an execution is successful.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#onSuccess-net.jodah.failsafe.ExecutionResult-">onSuccess(ExecutionResult)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Performs post-execution handling for a <code>result</code> that is considered a success according to <a href="net/jodah/failsafe/PolicyExecutor.html#isFailure-net.jodah.failsafe.ExecutionResult-"><code>PolicyExecutor.isFailure(ExecutionResult)</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyListeners.html#onSuccess-net.jodah.failsafe.function.CheckedConsumer-">onSuccess(CheckedConsumer&lt;? extends ExecutionCompletedEvent&lt;R&gt;&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyListeners.html" title="class in net.jodah.failsafe">PolicyListeners</a></dt>
 <dd>
 <div class="block">Registers the <code>listener</code> to be called when an execution is successful for a <a href="net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe"><code>Policy</code></a>.</div>
@@ -765,19 +792,35 @@
 <dd>
 <div class="block">A policy for handling execution failures.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#policy">policy</a></span> - Variable in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe"><span class="typeNameLink">PolicyExecutor</span></a>&lt;<a href="net/jodah/failsafe/PolicyExecutor.html" title="type parameter in PolicyExecutor">P</a> extends <a href="net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe">Policy</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
 <div class="block">Handles execution and execution results according to a policy.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#PolicyExecutor-P-">PolicyExecutor(P)</a></span> - Constructor for class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="net/jodah/failsafe/PolicyListeners.html" title="class in net.jodah.failsafe"><span class="typeNameLink">PolicyListeners</span></a>&lt;<a href="net/jodah/failsafe/PolicyListeners.html" title="type parameter in PolicyListeners">S</a>,<a href="net/jodah/failsafe/PolicyListeners.html" title="type parameter in PolicyListeners">R</a>&gt; - Class in <a href="net/jodah/failsafe/package-summary.html">net.jodah.failsafe</a></dt>
 <dd>
 <div class="block">Policy listener configuration.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyListeners.html#PolicyListeners--">PolicyListeners()</a></span> - Constructor for class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyListeners.html" title="class in net.jodah.failsafe">PolicyListeners</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#postExecute-net.jodah.failsafe.ExecutionResult-">postExecute(ExecutionResult)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Performs synchronous post-execution handling for a <code>result</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#postExecuteAsync-net.jodah.failsafe.ExecutionResult-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">postExecuteAsync(ExecutionResult, Scheduler, FailsafeFuture&lt;Object&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Performs potentially asynchronous post-execution handling for a <code>result</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/CircuitBreaker.html#preExecute--">preExecute()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/CircuitBreaker.html" title="class in net.jodah.failsafe">CircuitBreaker</a></dt>
 <dd>
 <div class="block">Records an execution that is about to take place by incrementing the internal executions count.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#preExecute--">preExecute()</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Called before execution to return an alternative result or failure such as if execution is not allowed or needed.</div>
 </dd>
 </dl>
 <a name="I:R">
@@ -889,6 +932,16 @@
 <dt><span class="memberNameLink"><a href="net/jodah/failsafe/ExecutionResult.html#success-java.lang.Object-">success(Object)</a></span> - Static method in class net.jodah.failsafe.<a href="net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a></dt>
 <dd>
 <div class="block">Returns a an ExecutionResult with the <code>result</code> set, <code>completed</code> true and <code>success</code> true.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#supply-java.util.function.Supplier-">supply(Supplier&lt;ExecutionResult&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Performs a synchronous execution by first doing a pre-execute, calling the next executor, else calling the
+ executor's supplier, then finally doing a post-execute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="net/jodah/failsafe/PolicyExecutor.html#supplyAsync-java.util.function.Supplier-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">supplyAsync(Supplier&lt;CompletableFuture&lt;ExecutionResult&gt;&gt;, Scheduler, FailsafeFuture&lt;Object&gt;)</a></span> - Method in class net.jodah.failsafe.<a href="net/jodah/failsafe/PolicyExecutor.html" title="class in net.jodah.failsafe">PolicyExecutor</a></dt>
+<dd>
+<div class="block">Performs an async execution by first doing an optional pre-execute, calling the next executor, else scheduling the
+ executor's supplier, then finally doing an async post-execute.</div>
 </dd>
 </dl>
 <a name="I:T">

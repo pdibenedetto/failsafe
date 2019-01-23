@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -69,15 +75,15 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -118,18 +124,290 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../net/jodah/failsafe/AbstractExecution.html" title="class in net.jodah.failsafe">AbstractExecution</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#execution">execution</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../net/jodah/failsafe/PolicyExecutor.html" title="type parameter in PolicyExecutor">P</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#policy">policy</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#PolicyExecutor-P-">PolicyExecutor</a></span>(<a href="../../../net/jodah/failsafe/PolicyExecutor.html" title="type parameter in PolicyExecutor">P</a>&nbsp;policy)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#isFailure-net.jodah.failsafe.ExecutionResult-">isFailure</a></span>(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result)</code>
+<div class="block">Returns whether the <code>result</code> is a success according to the policy.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#onFailure-net.jodah.failsafe.ExecutionResult-">onFailure</a></span>(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result)</code>
+<div class="block">Performs post-execution handling for a <code>result</code> that is considered a failure according to <a href="../../../net/jodah/failsafe/PolicyExecutor.html#isFailure-net.jodah.failsafe.ExecutionResult-"><code>isFailure(ExecutionResult)</code></a>, possibly creating a new result, else returning the original <code>result</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#onFailureAsync-net.jodah.failsafe.ExecutionResult-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">onFailureAsync</a></span>(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result,
+              <a href="../../../net/jodah/failsafe/util/concurrent/Scheduler.html" title="interface in net.jodah.failsafe.util.concurrent">Scheduler</a>&nbsp;scheduler,
+              <a href="../../../net/jodah/failsafe/FailsafeFuture.html" title="class in net.jodah.failsafe">FailsafeFuture</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;future)</code>
+<div class="block">Performs potentially asynchrononus post-execution handling for a failed <code>result</code>, possibly creating a new
+ result, else returning the original <code>result</code>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#onSuccess-net.jodah.failsafe.ExecutionResult-">onSuccess</a></span>(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result)</code>
+<div class="block">Performs post-execution handling for a <code>result</code> that is considered a success according to <a href="../../../net/jodah/failsafe/PolicyExecutor.html#isFailure-net.jodah.failsafe.ExecutionResult-"><code>isFailure(ExecutionResult)</code></a>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected <a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#postExecute-net.jodah.failsafe.ExecutionResult-">postExecute</a></span>(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result)</code>
+<div class="block">Performs synchronous post-execution handling for a <code>result</code>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#postExecuteAsync-net.jodah.failsafe.ExecutionResult-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">postExecuteAsync</a></span>(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result,
+                <a href="../../../net/jodah/failsafe/util/concurrent/Scheduler.html" title="interface in net.jodah.failsafe.util.concurrent">Scheduler</a>&nbsp;scheduler,
+                <a href="../../../net/jodah/failsafe/FailsafeFuture.html" title="class in net.jodah.failsafe">FailsafeFuture</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;future)</code>
+<div class="block">Performs potentially asynchronous post-execution handling for a <code>result</code>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected <a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#preExecute--">preExecute</a></span>()</code>
+<div class="block">Called before execution to return an alternative result or failure such as if execution is not allowed or needed.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#supply-java.util.function.Supplier-">supply</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&nbsp;supplier)</code>
+<div class="block">Performs a synchronous execution by first doing a pre-execute, calling the next executor, else calling the
+ executor's supplier, then finally doing a post-execute.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/PolicyExecutor.html#supplyAsync-java.util.function.Supplier-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">supplyAsync</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&gt;&nbsp;supplier,
+           <a href="../../../net/jodah/failsafe/util/concurrent/Scheduler.html" title="interface in net.jodah.failsafe.util.concurrent">Scheduler</a>&nbsp;scheduler,
+           <a href="../../../net/jodah/failsafe/FailsafeFuture.html" title="class in net.jodah.failsafe">FailsafeFuture</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;future)</code>
+<div class="block">Performs an async execution by first doing an optional pre-execute, calling the next executor, else scheduling the
+ executor's supplier, then finally doing an async post-execute.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="policy">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>policy</h4>
+<pre>protected final&nbsp;<a href="../../../net/jodah/failsafe/PolicyExecutor.html" title="type parameter in PolicyExecutor">P</a> extends <a href="../../../net/jodah/failsafe/Policy.html" title="interface in net.jodah.failsafe">Policy</a> policy</pre>
+</li>
+</ul>
+<a name="execution">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>execution</h4>
+<pre>protected&nbsp;<a href="../../../net/jodah/failsafe/AbstractExecution.html" title="class in net.jodah.failsafe">AbstractExecution</a> execution</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="PolicyExecutor-net.jodah.failsafe.Policy-">
+<!--   -->
+</a><a name="PolicyExecutor-P-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PolicyExecutor</h4>
+<pre>protected&nbsp;PolicyExecutor(<a href="../../../net/jodah/failsafe/PolicyExecutor.html" title="type parameter in PolicyExecutor">P</a>&nbsp;policy)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="preExecute--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>preExecute</h4>
+<pre>protected&nbsp;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;preExecute()</pre>
+<div class="block">Called before execution to return an alternative result or failure such as if execution is not allowed or needed.
+ Should return the provided <code>result</code> else some alternative.</div>
+</li>
+</ul>
+<a name="supply-java.util.function.Supplier-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>supply</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&nbsp;supply(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&nbsp;supplier)</pre>
+<div class="block">Performs a synchronous execution by first doing a pre-execute, calling the next executor, else calling the
+ executor's supplier, then finally doing a post-execute.</div>
+</li>
+</ul>
+<a name="postExecute-net.jodah.failsafe.ExecutionResult-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>postExecute</h4>
+<pre>protected&nbsp;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;postExecute(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result)</pre>
+<div class="block">Performs synchronous post-execution handling for a <code>result</code>.</div>
+</li>
+</ul>
+<a name="supplyAsync-java.util.function.Supplier-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>supplyAsync</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&gt;&nbsp;supplyAsync(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&gt;&nbsp;supplier,
+                                                                   <a href="../../../net/jodah/failsafe/util/concurrent/Scheduler.html" title="interface in net.jodah.failsafe.util.concurrent">Scheduler</a>&nbsp;scheduler,
+                                                                   <a href="../../../net/jodah/failsafe/FailsafeFuture.html" title="class in net.jodah.failsafe">FailsafeFuture</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;future)</pre>
+<div class="block">Performs an async execution by first doing an optional pre-execute, calling the next executor, else scheduling the
+ executor's supplier, then finally doing an async post-execute.</div>
+</li>
+</ul>
+<a name="postExecuteAsync-net.jodah.failsafe.ExecutionResult-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>postExecuteAsync</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&nbsp;postExecuteAsync(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result,
+                                                              <a href="../../../net/jodah/failsafe/util/concurrent/Scheduler.html" title="interface in net.jodah.failsafe.util.concurrent">Scheduler</a>&nbsp;scheduler,
+                                                              <a href="../../../net/jodah/failsafe/FailsafeFuture.html" title="class in net.jodah.failsafe">FailsafeFuture</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;future)</pre>
+<div class="block">Performs potentially asynchronous post-execution handling for a <code>result</code>.</div>
+</li>
+</ul>
+<a name="isFailure-net.jodah.failsafe.ExecutionResult-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFailure</h4>
+<pre>protected&nbsp;boolean&nbsp;isFailure(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result)</pre>
+<div class="block">Returns whether the <code>result</code> is a success according to the policy. If the {code result} has no result, it is
+ not a failure.</div>
+</li>
+</ul>
+<a name="onSuccess-net.jodah.failsafe.ExecutionResult-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSuccess</h4>
+<pre>protected&nbsp;void&nbsp;onSuccess(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result)</pre>
+<div class="block">Performs post-execution handling for a <code>result</code> that is considered a success according to <a href="../../../net/jodah/failsafe/PolicyExecutor.html#isFailure-net.jodah.failsafe.ExecutionResult-"><code>isFailure(ExecutionResult)</code></a>.</div>
+</li>
+</ul>
+<a name="onFailure-net.jodah.failsafe.ExecutionResult-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onFailure</h4>
+<pre>protected&nbsp;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;onFailure(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result)</pre>
+<div class="block">Performs post-execution handling for a <code>result</code> that is considered a failure according to <a href="../../../net/jodah/failsafe/PolicyExecutor.html#isFailure-net.jodah.failsafe.ExecutionResult-"><code>isFailure(ExecutionResult)</code></a>, possibly creating a new result, else returning the original <code>result</code>.</div>
+</li>
+</ul>
+<a name="onFailureAsync-net.jodah.failsafe.ExecutionResult-net.jodah.failsafe.util.concurrent.Scheduler-net.jodah.failsafe.FailsafeFuture-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onFailureAsync</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&gt;&nbsp;onFailureAsync(<a href="../../../net/jodah/failsafe/ExecutionResult.html" title="class in net.jodah.failsafe">ExecutionResult</a>&nbsp;result,
+                                                            <a href="../../../net/jodah/failsafe/util/concurrent/Scheduler.html" title="interface in net.jodah.failsafe.util.concurrent">Scheduler</a>&nbsp;scheduler,
+                                                            <a href="../../../net/jodah/failsafe/FailsafeFuture.html" title="class in net.jodah.failsafe">FailsafeFuture</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;future)</pre>
+<div class="block">Performs potentially asynchrononus post-execution handling for a failed <code>result</code>, possibly creating a new
+ result, else returning the original <code>result</code>.</div>
+</li>
 </ul>
 </li>
 </ul>
@@ -185,15 +463,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

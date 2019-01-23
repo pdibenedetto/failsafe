@@ -134,9 +134,7 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
  <p>
  The <code>handle</code> methods describe when a retry should be performed for a particular failure. The <code>handleResult</code> methods describe when a retry should be performed for a particular result. If multiple <code>handle</code>
  or <code>handleResult</code> conditions are specified, any matching condition can allow a retry. The <code>abortOn</code>,
- <code>abortWhen</code> and <code>abortIf</code> methods describe when retries should be aborted.
- <p>
- An <a href="../../../net/jodah/failsafe/Execution.html" title="class in net.jodah.failsafe"><code>Execution</code></a> is marked as <code>completed</code> when the <code>RetryPolicy</code></div>
+ <code>abortWhen</code> and <code>abortIf</code> methods describe when retries should be aborted.</div>
 </li>
 </ul>
 </div>
@@ -178,11 +176,6 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/RetryPolicy.html#RetryPolicy--">RetryPolicy</a></span>()</code>
 <div class="block">Creates a retry policy that allows 3 execution attempts max with no delay.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/jodah/failsafe/RetryPolicy.html#RetryPolicy-net.jodah.failsafe.RetryPolicy-">RetryPolicy</a></span>(<a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a>&lt;<a href="../../../net/jodah/failsafe/RetryPolicy.html" title="type parameter in RetryPolicy">R</a>&gt;&nbsp;rp)</code>
-<div class="block">Copy constructor.</div>
 </td>
 </tr>
 </table>
@@ -488,21 +481,11 @@ extends <a href="../../../net/jodah/failsafe/FailurePolicy.html" title="class in
 <a name="RetryPolicy--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>RetryPolicy</h4>
 <pre>public&nbsp;RetryPolicy()</pre>
 <div class="block">Creates a retry policy that allows 3 execution attempts max with no delay.</div>
-</li>
-</ul>
-<a name="RetryPolicy-net.jodah.failsafe.RetryPolicy-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>RetryPolicy</h4>
-<pre>public&nbsp;RetryPolicy(<a href="../../../net/jodah/failsafe/RetryPolicy.html" title="class in net.jodah.failsafe">RetryPolicy</a>&lt;<a href="../../../net/jodah/failsafe/RetryPolicy.html" title="type parameter in RetryPolicy">R</a>&gt;&nbsp;rp)</pre>
-<div class="block">Copy constructor.</div>
 </li>
 </ul>
 </li>

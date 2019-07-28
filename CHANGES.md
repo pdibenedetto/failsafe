@@ -1,9 +1,15 @@
-# Next
+# 2.1.2
 
 ### Improvements
 
+- Added support for `CircuitBreaker.withDelay(DelayFunction)`
 - Added `ExecutionContext.getLastResult` and `.getLastFailure` to support retries that depend on previous executions
 - Added `CircuitBreakerOpenException.getCircuitBreaker`
+
+### API Changes
+
+- `RetryPolicy.DelayedFunction` was moved to the `net.jodah.failsafe.function` package.
+- Removed `RetryPolicy.canApplyDelayFn`
 
 # 2.1.1
 
